@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tic Tac Toe Madness!</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='tic-tac-toe.css'>
+    
+</head>
+<body>
+    <header>
+        <h1>Tic Tac Toe!</h1>
+    </header>
+    <main>
+      <div class="container centered">
+        <table id="gameTable" class="board centered">
+          <tr>
+            <td attr-i="0" attr-j="0" class="top left">
+              <span class="empty piece"></span>             
+              </td>
+            <td attr-i="0" attr-j="1" class="top">
+              <span class="empty piece"></span>              
+            </td>
+            
+            <td attr-i="0" attr-j="2" class="top right">
+              <span class="empty piece"></span>
+            </td>
+          </tr>
+          <tr>
+            <td attr-i="1" attr-j="0" class="left">
+              <span class="empty piece">O</span>
+            </td>
+            <td attr-i="1" attr-j="1">
+              <span class="empty piece"></span>
+            </td>
+            <td attr-i="1" attr-j="2" class="right">
+              <span class="empty piece"></span>
+            </td>
+          </tr>
+          <tr>
+            <td attr-i="2" attr-j="0"class="bottom left">
+              <span class="empty piece"></span>
+            </td>
+            <td attr-i="2" attr-j="1" class="bottom">
+              <span class="empty piece"></span>
+            </td>
+            <td attr-i="2" attr-j="2" class="bottom right">
+              <span class="empty piece"></span>
+            </td>
+          </tr>
+        </table>
+      </div>
+      
+    </main>     
+    <div id="overlay" onclick="overlayOff()">
+      <div id="overlayText">
+        Winner is: <span id="winnerName"></span>
+      </div>
+    </div>
+</body>
+<script src="game.js"></script>
+<!--script src="game - winner solution phase 2.js"></script-->
+<!--script src="game - winner solution phase 2.js"></script-->
+</html>

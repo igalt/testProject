@@ -1,0 +1,108 @@
+html, body{
+    height: 100%;
+    width: 100%;
+  }
+
+body{
+  background: url("background.png") no-repeat;
+  background-size: cover;
+}
+header{
+    text-align: center;
+}
+  
+  h1{
+    /* Another way of centering the header
+    width: 100px;
+    margin: auto;
+    */
+  }
+
+  .centered{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+  }
+
+  .container{
+    position: absolute; 
+    width: 500px;
+    height: 300px;
+    border: 10px orange solid;
+    border-radius: 20px;
+  }
+  
+  table{
+   position: absolute;
+   border-collapse: collapse;
+   /*transform: translate(-50%, -50%) rotate(270deg); */
+  }
+  
+  td {
+     border: 3px blue solid;
+     width: 80px;
+     height: 80px;
+     text-align: center;
+  }
+
+ 
+  
+  .left{
+    border-left: none;
+  }
+  
+  .right{
+    border-right: none;
+  }
+  
+  .top{
+    border-top: none;
+  }
+  
+  .bottom{
+    border-bottom: none;
+  }
+  
+  .piece{
+    font-size: 40px;
+    text-shadow: 2px 2px 5px; 
+  }
+
+.empty{
+  visibility: hidden;
+}
+
+td:hover .empty{
+    opacity: 0.5;
+    visibility: visible;
+  }
+
+span.piece:not(.empty){
+  display: inline-block;
+  transform: rotate(360deg) scale(2, 2);
+  transition: transform 2s;
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+
+  #overlayText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
